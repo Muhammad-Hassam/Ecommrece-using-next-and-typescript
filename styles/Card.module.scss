@@ -1,0 +1,420 @@
+.maindiv {
+	.cardmain {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+		gap: 25px;
+		.card {
+			margin: auto;
+			background-color: #fff;
+			box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			color: rgb(43, 52, 69);
+			justify-content: space-between;
+			border-radius: 8px;
+			height: 100%;
+			.topdiv {
+				margin-top: 15px;
+				.imghead {
+					.leftdiv {
+						display: inline-flex;
+						align-items: center;
+						justify-content: center;
+						height: 24px;
+						color: rgb(255, 255, 255);
+						background-color: rgb(210, 63, 87);
+						border-radius: 16px;
+						padding: 0px 8px;
+						vertical-align: middle;
+						box-sizing: border-box;
+						font-size: 10px;
+						font-weight: 600;
+						position: absolute;
+						left: 15px;
+						z-index: 10;
+					}
+					.rightdiv {
+						display: none;
+						position: absolute;
+						right: 15px;
+						z-index: 10;
+
+						.eyeicon {
+							display: block;
+						}
+					}
+				}
+				.image {
+					border-radius: 16px;
+				}
+			}
+			.bottomdiv {
+				margin-left: 10px;
+				position: relative;
+				h3 {
+					margin-bottom: 8px;
+					margin-top: 0px;
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 1.5;
+					text-align: left;
+					color: rgb(55, 63, 80);
+				}
+				.fillstars {
+					color: rgb(250, 175, 0);
+				}
+				.unfilstars {
+					color: gray;
+				}
+
+				.addcartdiv {
+					padding-top: 5px;
+					display: flex;
+					justify-content: space-between;
+					.pricediv {
+						display: flex;
+						justify-content: space-between;
+						.realprice {
+							padding-right: 8px;
+							color: rgb(210, 63, 87);
+							font-size: 13px;
+						}
+						.cutprice {
+							color: rgb(125, 135, 156);
+							font-size: 13px;
+						}
+					}
+					.add {
+						padding-top: -5px;
+						display: inline-flex;
+						align-items: center;
+						justify-content: center;
+						box-sizing: border-box;
+						background-color: transparent;
+						cursor: pointer;
+						appearance: none;
+						text-decoration: none;
+						font-size: 0.875rem;
+						line-height: 1.75;
+						border-radius: 4px;
+						border: 1px solid rgba(210, 63, 87, 0.5);
+						color: rgb(210, 63, 87);
+						font-weight: 600;
+						padding: 3px 8px;
+						margin-bottom: 0;
+						position: relative;
+						top: -15px;
+						right: 15px;
+					}
+				}
+			}
+		}
+		.card:hover {
+			.topdiv {
+				.imghead {
+					.rightdiv {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Category Card CSS
+
+.main {
+	.category {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 25px;
+		.card {
+			background-color: rgb(255, 255, 255);
+			color: rgb(43, 52, 69);
+			box-shadow: none;
+			border-radius: 8px;
+			transition: all 250ms ease-in-out 0s;
+			padding: 1rem;
+			.cardbtn {
+				display: flex;
+				justify-content: space-between;
+				position: relative;
+				border-radius: 16px;
+				.leftbtn {
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					height: 24px;
+					color: rgb(255, 255, 255);
+					background-color: rgb(15, 52, 96);
+					border-radius: 16px;
+					cursor: none;
+					padding: 0px 15px;
+					box-sizing: border-box;
+					position: absolute;
+					font-size: 10px;
+					z-index: 2;
+					top: 15px;
+					left: 10px;
+				}
+				.rightbtn {
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					height: 24px;
+					color: rgb(43, 52, 69);
+					background-color: rgba(0, 0, 0, 0.08);
+					border-radius: 16px;
+					cursor: default;
+					padding: 0px 8px;
+					position: absolute;
+					font-size: 10px;
+					position: flex-end;
+					top: 15px;
+					right: 10px;
+					z-index: 2;
+				}
+			}
+			.imgdiv {
+				border-radius: 10px;
+			}
+			.imgdiv:hover {
+				filter: opacity(0.7) drop-shadow(0 0 0 black);
+			}
+		}
+	}
+}
+// Rated Card CSS
+.carddiv {
+	.ratedmain {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+		gap: 10px;
+		text-align: center;
+		background-color: rgb(255, 255, 255);
+		width: 50%;
+		border-radius: 10px;
+		.rated {
+			color: rgb(43, 52, 69);
+			box-shadow: none;
+			border-radius: 8px;
+			transition: all 250ms ease-in-out 0s;
+			padding: 1rem;
+			.stars {
+				margin-top: 5px;
+				display: flex;
+				justify-content: space-between;
+				.outof {
+					font-size: 12px;
+					font-weight: 600;
+					padding-left: 4px;
+				}
+			}
+			h4 {
+				margin-bottom: 4px;
+				font-size: 14px;
+				font-weight: 600;
+			}
+			.price {
+				font-size: 14px;
+				font-weight: 600;
+				text-align: center;
+				color: rgb(210, 63, 87);
+			}
+		}
+	}
+}
+
+// Feature Card CSS
+
+.featurediv {
+	.feature {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+		gap: 10px;
+		background-color: rgb(255, 255, 255);
+		width: 50%;
+		border-radius: 10px;
+		.card {
+			color: rgb(43, 52, 69);
+			box-shadow: none;
+			border-radius: 8px;
+			transition: all 250ms ease-in-out 0s;
+			padding: 1rem;
+			h4 {
+				margin-top: 5px;
+				font-size: 14px;
+				font-weight: 600;
+			}
+			.imgdiv:hover {
+				filter: opacity(0.7) drop-shadow(0 0 0 black);
+			}
+		}
+	}
+}
+
+// Arrival Card CSS
+.arrivaldiv {
+	.arrival {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+		gap: 5px;
+		background-color: rgb(255, 255, 255);
+		border-radius: 10px;
+		.card {
+			color: rgb(43, 52, 69);
+			box-shadow: none;
+			border-radius: 8px;
+			transition: all 250ms ease-in-out 0s;
+			padding: 1rem;
+			.imgdiv {
+			}
+			.imgdiv:hover {
+				filter: opacity(0.7) drop-shadow(0 0 0 black);
+			}
+			h4 {
+				margin-top: 7px;
+				margin-bottom: 4px;
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 1.5;
+			}
+			span {
+				font-size: 14px;
+				font-weight: 600;
+				color: rgb(210, 63, 87);
+			}
+		}
+	}
+}
+
+// Discounts Card CSS
+
+.discountdiv {
+	.discount {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+		gap: 20px;
+		.card {
+			background-color: rgb(255, 255, 255);
+			padding: 1rem;
+			border-radius: 10px;
+
+			h4 {
+				color: rgb(43, 52, 69);
+				font-size: 14px;
+				margin-bottom: 5px;
+				font-weight: 600;
+			}
+			.imgdiv {
+				width: 142px;
+				height: 142px;
+			}
+			.imgdiv:hover {
+				filter: opacity(0.7) drop-shadow(0 0 0 black);
+			}
+			span {
+				font-size: 12px;
+				font-weight: 600;
+				color: rgb(210, 63, 87);
+				margin-right: 7px;
+			}
+			del {
+				font-size: 12px;
+				font-weight: 600;
+				color: rgb(125, 135, 156);
+			}
+		}
+	}
+}
+
+.smalldiv {
+	.small {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+		gap: 25px;
+		.card {
+			background-color: rgb(255, 255, 255);
+			padding: 0.2rem;
+			border-radius: 7px;
+			display: flex;
+			height: 70px;
+			align-items: center;
+
+			.imgdiv {
+				width: 50px;
+				height: 52px;
+				min-width: 50px !important;
+				max-width: 52px !important;
+			}
+			.text {
+				font-size: 12px;
+				font-weight: 400;
+			}
+		}
+		.card:hover {
+			box-shadow: 0 1px 4px #e2e1f0;
+		}
+	}
+}
+.servicediv {
+	.service {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+		gap: 25px;
+		.insidediv {
+			background-color: rgb(255, 255, 255);
+			color: rgb(43, 52, 69);
+			box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 3rem;
+			height: 100%;
+			border-radius: 8px;
+			button {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				box-sizing: border-box;
+				border: 0px;
+				cursor: pointer;
+				vertical-align: middle;
+				text-decoration: none;
+				text-align: center;
+				padding: 8px;
+				border-radius: 50%;
+				color: rgba(0, 0, 0, 0.54);
+				font-size: 1.75rem;
+				height: 64px;
+				width: 64px;
+				background-color: rgb(243, 245, 249);
+			}
+			h4 {
+				margin-bottom: 10px;
+				margin-top: 20px;
+				font-size: 17px;
+				font-weight: 600;
+				line-height: 1.5;
+			}
+			.para {
+				text-align: center;
+				span {
+					line-height: 1.5;
+					text-align: center;
+					color: rgb(125, 135, 156);
+					text-transform: none;
+					white-space: normal;
+					font-weight: 200;
+					font-size: 15px;
+				}
+			}
+		}
+		.insidediv:hover {
+			box-shadow: 0 1px 20px #e2e1f0;
+		}
+	}
+}

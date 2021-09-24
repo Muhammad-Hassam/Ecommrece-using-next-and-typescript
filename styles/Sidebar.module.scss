@@ -1,0 +1,40 @@
+.maindiv {
+	.sidebar {
+		background-color: rgb(255, 255, 255);
+		color: rgb(43, 52, 69);
+		box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+		border-radius: 10px;
+		padding: 1.25rem;
+		margin-right: 1.75rem;
+		width: 240px;
+		height: 100%;
+		.insidediv {
+			color: rgb(43, 52, 69);
+			display: flex;
+			align-items: center;
+			padding: 0.75rem 1rem;
+			border-radius: 5px;
+			cursor: pointer;
+			background-color: rgb(246, 249, 252);
+			margin-bottom: 0.75rem;
+
+			.imgdiv {
+				overflow: hidden;
+				box-sizing: border-box;
+				display: inline-block;
+				position: relative;
+				width: 20px;
+				height: 20px;
+			}
+			h4 {
+				margin-bottom: 0px;
+				margin-top: 0px;
+				font-size: 17px;
+				font-weight: 600;
+				line-height: 1;
+				margin-left: 16px;
+				text-transform: capitalize;
+			}
+		}
+	}
+}

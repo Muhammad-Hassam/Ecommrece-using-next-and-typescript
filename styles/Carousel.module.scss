@@ -1,0 +1,60 @@
+.maindiv {
+	.carousel {
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+		width: 85%;
+		.leftdiv {
+			width: 50%;
+			padding-left: 24px;
+			h1 {
+				font-size: 50px;
+				margin-top: 0px;
+				margin-bottom: 1.35rem;
+				line-height: 1.2;
+			}
+			p {
+				margin-bottom: 21.6px;
+				margin-top: 0px;
+				font-size: 14px;
+				color: rgb(15, 52, 96);
+				text-transform: none;
+				white-space: normal;
+			}
+			button {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				box-sizing: border-box;
+				outline: 0px;
+				border: 0px;
+				margin: 0px;
+				cursor: pointer;
+				user-select: none;
+				vertical-align: middle;
+				text-decoration: none;
+				font-size: 0.875rem;
+				line-height: 1.75;
+				padding: 6px 1.75rem;
+				color: rgb(255, 255, 255);
+				background-color: rgb(210, 63, 87);
+				box-shadow: none;
+				font-weight: 600;
+				text-transform: capitalize;
+				min-width: 0px;
+				min-height: 0px;
+				height: 44px;
+				border-radius: 8px;
+			}
+		}
+		.rightdiv {
+			.img {
+				width: 428px !important;
+				height: 400px !important;
+				min-width: 428px !important;
+				min-height: 400px !important;
+			}
+		}
+	}
+}

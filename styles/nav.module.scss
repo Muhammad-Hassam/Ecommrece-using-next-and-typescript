@@ -1,0 +1,112 @@
+.maindiv {
+	box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+	overflow: unset;
+	display: block;
+	position: relative;
+	height: 150px;
+	border-radius: 0px;
+	.nav {
+		background-color: rgb(255, 255, 255);
+		position: relative;
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+			padding: 20px 10px;
+			.searchbar {
+				position: fixed;
+			}
+			.searchdiv {
+				color: rgb(75, 86, 107) !important;
+				border: 1px solid grey;
+				display: flex;
+				width: 45%;
+				align-items: center;
+				border-radius: 1200px;
+				padding-right: 5px;
+				.selectdiv {
+					height: 35px;
+					background-color: rgb(246, 249, 252);
+					align-items: center;
+					border-left: 1px solid rgb(218, 225, 231);
+					border-radius: 0px 50px 50px 0;
+					margin-right: -4px;
+					display: table-footer-group;
+					select {
+						outline: none;
+						margin-top: 7px;
+						border: none;
+						box-sizing: border-box;
+						background-color: rgb(246, 249, 252);
+						color: rgb(75, 86, 107);
+						-webkit-tap-highlight-color: transparent;
+						border-radius: 0 50px 50px 0;
+					}
+				}
+				.srchicon {
+					padding-left: 2%;
+					color: rgb(125, 135, 156);
+				}
+				.inputdiv {
+					display: flex;
+					padding-left: 2%;
+					width: 80%;
+					input {
+						outline: none;
+						border: none;
+						width: 97%;
+						cursor: text;
+					}
+				}
+			}
+			.cartdiv {
+				margin-right: 10px;
+				.icon {
+					background-color: rgb(243, 245, 249);
+					width: 36px;
+					height: 36px;
+					padding: 8px;
+					margin-right: 15px;
+					color: rgba(0, 0, 0, 0.54);
+					border-radius: 100%;
+				}
+			}
+		}
+
+		.nav {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 15px;
+			.navbar {
+				width: 60%;
+				display: flex;
+				background-color: rgb(246, 249, 252);
+				padding: 10px;
+				width: 278px;
+				border-radius: 5px;
+				justify-content: space-between;
+				.catgspn {
+					font-weight: 600;
+					color: rgb(125, 135, 156);
+					margin-left: 10px;
+				}
+				.catbar {
+					display: flex;
+				}
+			}
+			.navmain {
+				width: 40%;
+				margin-top: inherit;
+				ul {
+					display: flex;
+					justify-content: space-between;
+					li {
+						display: inline;
+						font-size: 12px;
+						font-weight: 200;
+					}
+				}
+			}
+		}
+	}
+}
