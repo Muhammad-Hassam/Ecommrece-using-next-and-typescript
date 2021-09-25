@@ -3,35 +3,38 @@ import Container from "./Container";
 import Image from "next/image";
 import headphone from "../assets/7.png";
 
-const Discountcard = () => {
+interface Iprops {
+	data: [
+		{
+			img: string;
+			product: string;
+			price: string;
+			del: string;
+		},
+	];
+}
+
+const Discountcard = ({ data }: Iprops) => {
 	return (
 		<div className={styles.discountdiv}>
 			<Container>
 				<div className={styles.discount}>
-					<div className={styles.card}>
-						<div className={styles.imgdiv}>
-							<Image src={headphone} />
-						</div>
-						<div>
-							<h4>BenX 2020</h4>
-						</div>
-						<div>
-							<span>$250</span>
-							<del>$250</del>
-						</div>
-					</div>
-					<div className={styles.card}>
-						<div className={styles.imgdiv}>
-							<Image src={headphone} />
-						</div>
-						<div>
-							<h4>BenX 2020</h4>
-						</div>
-						<div>
-							<span>$250</span>
-							<del>$250</del>
-						</div>
-					</div>
+					{data.map((val, ind) => {
+						return (
+							<div className={styles.card}>
+								<div className={styles.imgdiv}>
+									<Image src={val.img} />
+								</div>
+								<div>
+									<h4>{val.product}</h4>
+								</div>
+								<div>
+									<span>{val.price}</span>
+									<del>{val.del}</del>
+								</div>
+							</div>
+						);
+					})}
 				</div>
 			</Container>
 		</div>

@@ -7,53 +7,79 @@ import {
 	AiOutlineStar,
 	AiFillStar,
 } from "react-icons/Ai";
-import flash from "../assets/flash-1.png";
-const Card = () => {
+
+interface Iprops {
+	data: [
+		{
+			heading: string;
+			img: string;
+			price: string;
+			del: string;
+			stars: string;
+		},
+	];
+	carousel: boolean;
+}
+
+const Card = ({ data, carousel }: Iprops) => {
 	return (
 		<div className={styles.maindiv}>
-			<Container>
-				<div className={styles.cardmain}>
-					<div className={styles.card}>
-						<div className={styles.topdiv}>
-							<div className={styles.imghead}>
-								<div className={styles.leftdiv}>
-									<span>25% off</span>
-								</div>
-								<div className={styles.rightdiv}>
-									<AiFillEye className={styles.eyeicon} />
-									<AiOutlineHeart />
-								</div>
-							</div>
-							<div className={styles.image}>
-								<Image src={flash} />
-							</div>
-						</div>
-						<div className={styles.bottomdiv}>
-							<div>
-								<h3>Smart watch black</h3>
-							</div>
-							<div>
-								<AiFillStar size={17} className={styles.fillstars} />
-								<AiFillStar size={17} className={styles.fillstars} />
-								<AiFillStar size={17} className={styles.fillstars} />
-								<AiFillStar size={17} className={styles.fillstars} />
-								<AiOutlineStar size={17} className={styles.unfilstars} />
-							</div>
-							<div className={styles.addcartdiv}>
-								<div className={styles.pricediv}>
-									<div className={styles.realprice}>$187.50</div>
-									<div className={styles.cutprice}>
-										<del>250.00</del>
+			<div className={styles.cardmain}>
+				{data.map((val, ind) => {
+					return (
+						<div className={styles.card}>
+							<div className={styles.topdiv}>
+								<div className={styles.imghead}>
+									<div className={styles.leftdiv}>
+										<span>25% off</span>
+									</div>
+									<div className={styles.rightdiv}>
+										<AiFillEye className={styles.eyeicon} />
+										<AiOutlineHeart />
 									</div>
 								</div>
-								<div className={styles.add}>
-									<span>+</span>
+								<div className={styles.image}>
+									<Image src={val?.img} />
+								</div>
+							</div>
+							<div className={styles.bottomdiv}>
+								<div>
+									<h3>{val?.heading}</h3>
+								</div>
+								{val?.stars === "yellow" ? (
+									<div>
+										<AiFillStar size={17} className={styles.fillstars} />
+										<AiFillStar size={17} className={styles.fillstars} />
+										<AiFillStar size={17} className={styles.fillstars} />
+										<AiFillStar size={17} className={styles.fillstars} />
+										<AiOutlineStar size={17} className={styles.unfilstars} />
+									</div>
+								) : (
+									<div>
+										<AiOutlineStar size={17} className={styles.unfilstars} />
+										<AiOutlineStar size={17} className={styles.unfilstars} />
+										<AiOutlineStar size={17} className={styles.unfilstars} />
+										<AiOutlineStar size={17} className={styles.unfilstars} />
+										<AiOutlineStar size={17} className={styles.unfilstars} />
+									</div>
+								)}
+
+								<div className={styles.addcartdiv}>
+									<div className={styles.pricediv}>
+										<div className={styles.realprice}>{val?.price}</div>
+										<div className={styles.cutprice}>
+											<del>{val?.del}</del>
+										</div>
+									</div>
+									<div className={styles.add}>
+										<span>+</span>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</Container>
+					);
+				})}
+			</div>
 		</div>
 	);
 };

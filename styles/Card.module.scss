@@ -111,6 +111,7 @@
 			}
 		}
 		.card:hover {
+			box-shadow: 0 0 20px #e2e1f0;
 			.topdiv {
 				.imghead {
 					.rightdiv {
@@ -189,11 +190,10 @@
 .carddiv {
 	.ratedmain {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-		gap: 10px;
+		grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+		gap: 5px;
 		text-align: center;
 		background-color: rgb(255, 255, 255);
-		width: 50%;
 		border-radius: 10px;
 		.rated {
 			color: rgb(43, 52, 69);
@@ -201,6 +201,9 @@
 			border-radius: 8px;
 			transition: all 250ms ease-in-out 0s;
 			padding: 1rem;
+			.imgdiv:hover {
+				filter: opacity(0.7) drop-shadow(0 0 0 black);
+			}
 			.stars {
 				margin-top: 5px;
 				display: flex;
@@ -234,7 +237,6 @@
 		grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
 		gap: 10px;
 		background-color: rgb(255, 255, 255);
-		width: 50%;
 		border-radius: 10px;
 		.card {
 			color: rgb(43, 52, 69);
@@ -268,8 +270,6 @@
 			border-radius: 8px;
 			transition: all 250ms ease-in-out 0s;
 			padding: 1rem;
-			.imgdiv {
-			}
 			.imgdiv:hover {
 				filter: opacity(0.7) drop-shadow(0 0 0 black);
 			}
@@ -312,8 +312,9 @@
 				height: 142px;
 			}
 			.imgdiv:hover {
-				filter: opacity(0.7) drop-shadow(0 0 0 black);
+				filter: opacity(0.4) drop-shadow(0 0 0 black);
 			}
+
 			span {
 				font-size: 12px;
 				font-weight: 600;
@@ -329,11 +330,12 @@
 	}
 }
 
+//Small Card CSS
 .smalldiv {
 	.small {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
-		gap: 25px;
+		grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+		gap: 30px;
 		.card {
 			background-color: rgb(255, 255, 255);
 			padding: 0.2rem;
@@ -358,11 +360,14 @@
 		}
 	}
 }
+
+//Service Card CSS
 .servicediv {
 	.service {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
 		gap: 25px;
+		margin-top: 80px;
 		.insidediv {
 			background-color: rgb(255, 255, 255);
 			color: rgb(43, 52, 69);

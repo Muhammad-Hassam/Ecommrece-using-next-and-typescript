@@ -1,0 +1,67 @@
+.maindiv {
+	margin-top: 80px;
+	background-color: rgb(12, 14, 48);
+	.insidediv {
+		display: grid;
+		grid-template-columns: 370px 160px 280px 310px;
+		gap: 30px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		overflow: hidden;
+		.img {
+			margin-bottom: 20px;
+			display: block;
+		}
+		.para {
+			margin-bottom: 20px;
+			margin-top: 20px;
+			font-size: 14px;
+			color: rgb(174, 180, 190);
+			text-transform: none;
+			white-space: normal;
+			line-height: 25px;
+		}
+		.contact {
+			padding-top: 4.8px;
+			padding-bottom: 4.8px;
+			color: rgb(174, 180, 190);
+			line-height: 25px;
+		}
+
+		h3 {
+			font-size: 25px;
+			font-weight: 400;
+			margin-bottom: 20px;
+			line-height: 1;
+			color: white;
+		}
+		a {
+			position: relative;
+			display: block;
+			padding: 0.3rem 0rem;
+			line-height: 23px;
+			color: rgb(174, 180, 190);
+			cursor: pointer;
+			border-radius: 4px;
+		}
+		.icondiv {
+			display: flex;
+			margin-left: -5px;
+			margin-right: -5px;
+			a {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				vertical-align: middle;
+				text-align: center;
+				border-radius: 50%;
+				color: #fff;
+				margin: 4px;
+				padding: 10px;
+				background-color: rgba(0, 0, 0, 0.2);
+				font-size: 12px;
+			}
+		}
+	}
+}

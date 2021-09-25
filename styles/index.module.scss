@@ -1,0 +1,10 @@
+.ratingdiv {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	gap: 25px;
+	padding: 0px 0 40px 0;
+}
+.productcard {
+	display: flex;
+	margin-top: 15px;
+}

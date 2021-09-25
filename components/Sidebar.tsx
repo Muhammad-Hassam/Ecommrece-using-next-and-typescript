@@ -3,28 +3,47 @@ import Container from "./Container";
 import CrslImg from "../assets/ferrari.png";
 import Image from "next/image";
 
-const Sidebar = () => {
+interface Iprops {
+	data: [
+		{
+			img: string;
+			product: string;
+		},
+	];
+	top: boolean;
+}
+
+const Sidebar = ({ data, top }: Iprops) => {
 	return (
 		<div className={styles.maindiv}>
-			<Container>
-				<div className={styles.sidebar}>
-					<div className={styles.insidediv}>
-						<div className={styles.imgdiv}>
-							<Image src={CrslImg} />
-						</div>
-						<div>
-							<h4>Ferrari</h4>
-						</div>
+			<div className={styles.sidebar}>
+				{top ? (
+					<div className={styles.brands}>
+						<h3>Brands</h3>
+						<h3 className={styles.light}>|</h3>
+						<h3 className={styles.light}>Shops</h3>
 					</div>
-					<div style={{ marginTop: "4rem" }}>
+				) : null}
+				{data.map((val, ind) => {
+					return (
 						<div className={styles.insidediv}>
-							<div className={styles.downdiv}>
-								<h4>View All Brands </h4>
+							<div className={styles.imgdiv}>
+								<Image src={val.img} />
 							</div>
+							<div>
+								<h4>{val.product}</h4>
+							</div>
+						</div>
+					);
+				})}
+				<div style={{ marginTop: "4rem" }}>
+					<div className={styles.insidediv}>
+						<div className={styles.downdiv}>
+							<h4>View All Brands </h4>
 						</div>
 					</div>
 				</div>
-			</Container>
+			</div>
 		</div>
 	);
 };
