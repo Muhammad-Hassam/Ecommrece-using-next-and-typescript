@@ -7,26 +7,27 @@ const Bottomtab = () => {
 	return (
 		<div className={styles.bottommain}>
 			<div className={styles.bottomtab}>
-				<div>
+				<div className={styles.tabs}>
 					<div className={styles.icons}>
 						<FiHome size={20} />
 					</div>
 					<a>Home</a>
 				</div>
-				<div>
+				<div className={styles.tabs}>
 					<div className={styles.icons}>
 						<BsGrid size={20} />
 					</div>
 
 					<a>Category</a>
 				</div>
-				<div>
+				<div className={styles.tabs}>
 					<div className={styles.icons}>
 						<AiOutlineShopping size={20} />
 					</div>
 					<a>Cart</a>
+					<span className={styles.cart}>3</span>
 				</div>
-				<div>
+				<div className={styles.tabs}>
 					<div className={styles.icons}>
 						<AiOutlineUser size={20} />
 					</div>

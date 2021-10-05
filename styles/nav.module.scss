@@ -150,9 +150,31 @@
 				justify-content: center;
 				margin-top: 10px;
 			}
+			.cart {
+				padding-top: 4px;
+				text-align: center;
+				position: absolute;
+				font-weight: 500;
+				font-size: 0.75rem;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background-color: rgb(210, 63, 87);
+				color: rgb(255, 255, 255);
+				left: 63%;
+				bottom: 40px;
+			}
 			a {
 				font-size: 13px;
 			}
+		}
+	}
+}
+
+.bottommain {
+	.bottomtab {
+		.tabs:hover {
+			color: rgb(210, 63, 87);
 		}
 	}
 }
