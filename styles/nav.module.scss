@@ -13,9 +13,15 @@
 			display: flex;
 			justify-content: space-between;
 			padding: 20px 10px;
+			.logo {
+				@media screen and (max-width: 900px) {
+					display: none;
+				}
+			}
 			.searchbar {
 				position: fixed;
 			}
+
 			.searchdiv {
 				color: rgb(75, 86, 107) !important;
 				border: 1px solid grey;
@@ -58,9 +64,15 @@
 						cursor: text;
 					}
 				}
+				@media screen and (max-width: 900px) {
+					width: 100%;
+				}
 			}
 			.cartdiv {
 				margin-right: 10px;
+				@media screen and (max-width: 900px) {
+					display: none;
+				}
 				.icon {
 					background-color: rgb(243, 245, 249);
 					width: 36px;
@@ -70,6 +82,9 @@
 					color: rgba(0, 0, 0, 0.54);
 					border-radius: 100%;
 				}
+			}
+			@media screen and (max-width: 900px) {
+				justify-content: center;
 			}
 		}
 
@@ -107,6 +122,12 @@
 					}
 				}
 			}
+			@media screen and (max-width: 900px) {
+				display: none;
+			}
 		}
+	}
+	@media screen and (max-width: 900px) {
+		height: 50px;
 	}
 }

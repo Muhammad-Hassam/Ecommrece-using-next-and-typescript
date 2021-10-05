@@ -2,6 +2,8 @@ import styles from "../styles/Header.module.scss";
 import Container from "./Container";
 import { AiOutlineMail } from "react-icons/Ai";
 import { FiPhone } from "react-icons/Fi";
+import logo from "../assets/logo.svg";
+import Image from "next/image";
 
 const Header = () => {
 	return (
@@ -9,6 +11,9 @@ const Header = () => {
 			<Container>
 				<div className={styles.backclr}>
 					<div className={styles.sides_space}>
+						<div className={styles.logo}>
+							<Image src={logo} alt="Logo" />
+						</div>
 						<p>
 							<FiPhone className={styles.icons} size={18} />
 							<span>+88012 3456 7894</span>

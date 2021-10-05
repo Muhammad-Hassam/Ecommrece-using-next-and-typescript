@@ -8,7 +8,7 @@ const Banner = () => {
 	return (
 		<Container>
 			<div className={styles.maindiv}>
-				<div>
+				<div className={styles.img1}>
 					<Image src={banner1} height={320} />
 				</div>
 				<div>

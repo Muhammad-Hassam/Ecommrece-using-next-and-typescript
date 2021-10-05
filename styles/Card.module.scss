@@ -120,6 +120,9 @@
 				}
 			}
 		}
+		@media screen and (max-width: 900px) {
+			margin: 12px;
+		}
 	}
 }
 
@@ -184,6 +187,9 @@
 				filter: opacity(0.7) drop-shadow(0 0 0 black);
 			}
 		}
+		@media screen and (max-width: 900px) {
+			margin: 12px;
+		}
 	}
 }
 // Rated Card CSS
@@ -226,6 +232,16 @@
 				color: rgb(210, 63, 87);
 			}
 		}
+		@media screen and (max-width: 1200px) {
+			grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+		}
+		@media screen and (max-width: 900px) {
+			grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+			margin: 12px;
+		}
+		@media screen and (max-width: 445px) {
+			grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+		}
 	}
 }
 
@@ -252,6 +268,10 @@
 			.imgdiv:hover {
 				filter: opacity(0.7) drop-shadow(0 0 0 black);
 			}
+		}
+		@media screen and (max-width: 900px) {
+			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+			margin: 12px;
 		}
 	}
 }
@@ -285,6 +305,9 @@
 				font-weight: 600;
 				color: rgb(210, 63, 87);
 			}
+		}
+		@media screen and (max-width: 900px) {
+			margin: 12px;
 		}
 	}
 }
@@ -327,6 +350,9 @@
 				color: rgb(125, 135, 156);
 			}
 		}
+		@media screen and (max-width: 900px) {
+			margin: 12px;
+		}
 	}
 }
 
@@ -357,6 +383,9 @@
 		}
 		.card:hover {
 			box-shadow: 0 1px 4px #e2e1f0;
+		}
+		@media screen and (max-width: 900px) {
+			margin: 12px;
 		}
 	}
 }
@@ -420,6 +449,9 @@
 		}
 		.insidediv:hover {
 			box-shadow: 0 1px 20px #e2e1f0;
+		}
+		@media screen and (max-width: 900px) {
+			margin: 12px;
 		}
 	}
 }

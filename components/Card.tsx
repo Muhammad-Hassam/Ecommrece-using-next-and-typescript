@@ -21,13 +21,13 @@ interface Iprops {
 	carousel: boolean;
 }
 
-const Card = ({ data, carousel }: Iprops) => {
+const Card = ({ data }: Iprops) => {
 	return (
 		<div className={styles.maindiv}>
 			<div className={styles.cardmain}>
 				{data.map((val, ind) => {
 					return (
-						<div className={styles.card}>
+						<div className={styles.card} key={ind}>
 							<div className={styles.topdiv}>
 								<div className={styles.imghead}>
 									<div className={styles.leftdiv}>

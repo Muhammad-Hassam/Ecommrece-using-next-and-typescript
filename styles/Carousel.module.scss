@@ -12,6 +12,9 @@
 				margin-top: 0px;
 				margin-bottom: 1.35rem;
 				line-height: 1.2;
+				@media screen and (max-width: 900px) {
+					font-size: 30px;
+				}
 			}
 			p {
 				margin-bottom: 21.6px;
@@ -29,32 +32,34 @@
 				box-sizing: border-box;
 				outline: 0px;
 				border: 0px;
-				margin: 0px;
 				cursor: pointer;
-				user-select: none;
 				vertical-align: middle;
-				text-decoration: none;
 				font-size: 0.875rem;
 				line-height: 1.75;
 				padding: 6px 1.75rem;
 				color: rgb(255, 255, 255);
 				background-color: rgb(210, 63, 87);
-				box-shadow: none;
 				font-weight: 600;
-				text-transform: capitalize;
-				min-width: 0px;
-				min-height: 0px;
 				height: 44px;
 				border-radius: 8px;
+			}
+			@media screen and (max-width: 900px) {
+				width: 100%;
 			}
 		}
 		.rightdiv {
 			.img {
-				width: 428px !important;
-				height: 400px !important;
-				min-width: 428px !important;
-				min-height: 400px !important;
+				@media screen and (min-width: 900px) {
+					width: 428px !important;
+					height: 400px !important;
+					min-width: 428px !important;
+					min-height: 400px !important;
+				}
 			}
+		}
+		@media screen and (max-width: 900px) {
+			display: block;
+			margin-top: 70px;
 		}
 	}
 }

@@ -8,8 +8,8 @@ import {
 } from "react-icons/Ai";
 import { BsFillGridFill } from "react-icons/Bs";
 import { MdKeyboardArrowRight } from "react-icons/Md";
-
 import Image from "next/image";
+
 const Nav = () => {
 	return (
 		<div className={styles.maindiv}>
@@ -38,8 +38,6 @@ const Nav = () => {
 											<option value="Desktop">Desktop</option>
 											<option value="Camera">Camera</option>
 											<option value="Toys">Toys</option>
-
-											<option></option>
 										</select>
 									</div>
 								</div>

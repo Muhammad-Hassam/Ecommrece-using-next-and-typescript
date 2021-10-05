@@ -2,4 +2,14 @@
 	display: flex;
 	justify-content: space-between;
 	margin-top: 80px;
+	@media screen and (max-width: 900px) {
+		display: block;
+		margin: 10px;
+	}
+	.img1 {
+		:first-child {
+			width: 100%;
+		}
+		margin-bottom: 10px;
+	}
 }
