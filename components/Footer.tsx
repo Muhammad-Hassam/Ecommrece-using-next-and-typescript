@@ -74,7 +74,7 @@ const Footer = () => {
 							<div className={styles.icondiv}>
 								{icons.map((Val, ind) => {
 									return (
-										<a>
+										<a key={ind}>
 											<Val />
 										</a>
 									);
