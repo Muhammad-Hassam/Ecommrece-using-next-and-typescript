@@ -55,13 +55,13 @@ const Footer = () => {
 						<div>
 							<h3>About Us</h3>
 							{about.map((val, ind) => {
-								return <a>{val}</a>;
+								return <a key={ind}>{val}</a>;
 							})}
 						</div>
 						<div>
 							<h3>Customer Care</h3>
 							{customer.map((val, ind) => {
-								return <a>{val}</a>;
+								return <a key={ind}>{val}</a>;
 							})}
 						</div>
 						<div>

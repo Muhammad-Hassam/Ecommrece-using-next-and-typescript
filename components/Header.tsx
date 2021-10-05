@@ -24,7 +24,7 @@ const Header = () => {
 						</p>
 					</div>
 					<div className={styles.sides_space}>
-						<p>Theme FAQ's</p>
+						<p>Theme FAQs</p>
 						<p>Need Help?</p>
 						<select>
 							<option value="EN">EN</option>
