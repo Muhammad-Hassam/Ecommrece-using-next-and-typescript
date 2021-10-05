@@ -3,12 +3,10 @@ import Container from "./Container";
 import Image from "next/image";
 
 interface Iprops {
-	data: [
-		{
-			img: string;
-			product: string;
-		},
-	];
+	data: {
+		img: StaticImageData;
+		product: string;
+	}[];
 }
 
 const Featurecard = ({ data }: Iprops) => {

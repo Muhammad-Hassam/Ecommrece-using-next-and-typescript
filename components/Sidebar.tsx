@@ -2,12 +2,10 @@ import styles from "../styles/Sidebar.module.scss";
 import Image from "next/image";
 
 interface Iprops {
-	data: [
-		{
-			img: string;
-			product: string;
-		},
-	];
+	data: {
+		img: StaticImageData;
+		product: string;
+	}[];
 	top: boolean;
 }
 

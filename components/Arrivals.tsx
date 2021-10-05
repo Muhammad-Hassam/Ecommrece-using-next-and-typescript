@@ -3,13 +3,11 @@ import Container from "./Container";
 import Image from "next/image";
 
 interface Iprops {
-	data: [
-		{
-			img: string;
-			product: string;
-			price: string;
-		},
-	];
+	data: {
+		img: StaticImageData;
+		product: string;
+		price: string;
+	}[];
 }
 
 const Arrivalcard = ({ data }: Iprops) => {

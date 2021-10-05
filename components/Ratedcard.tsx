@@ -4,14 +4,12 @@ import Image from "next/image";
 import { AiFillStar } from "react-icons/ai";
 
 interface Iprops {
-	data: [
-		{
-			img: string;
-			rated: number;
-			productnam: string;
-			price: string;
-		},
-	];
+	data: {
+		img: StaticImageData;
+		rated: number;
+		productnam: string;
+		price: string;
+	}[];
 }
 
 const Ratedcard = ({ data }: Iprops) => {

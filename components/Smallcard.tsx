@@ -3,12 +3,10 @@ import Container from "./Container";
 import Image from "next/image";
 
 interface Iprops {
-	data: [
-		{
-			img: string;
-			product: string;
-		},
-	];
+	data: {
+		img: StaticImageData;
+		product: string;
+	}[];
 }
 
 const Smallcard = ({ data }: Iprops) => {
@@ -18,7 +16,7 @@ const Smallcard = ({ data }: Iprops) => {
 				<div className={styles.small}>
 					{data.map((val, ind) => {
 						return (
-							<div className={styles.card}>
+							<div className={styles.card} key={ind}>
 								<div className={styles.imgdiv}>
 									<Image src={val.img} />
 								</div>

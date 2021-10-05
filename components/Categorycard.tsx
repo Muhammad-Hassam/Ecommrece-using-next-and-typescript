@@ -2,13 +2,11 @@ import styles from "../styles/Card.module.scss";
 import Container from "./Container";
 import Image from "next/image";
 interface Iprops {
-	datacard: [
-		{
-			itemname: string;
-			img: string;
-			order: string;
-		},
-	];
+	datacard: {
+		itemname: string;
+		img: StaticImageData;
+		order: string;
+	}[];
 }
 
 const Categorycard = ({ datacard }: Iprops) => {

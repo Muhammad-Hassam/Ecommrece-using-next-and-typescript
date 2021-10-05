@@ -9,15 +9,13 @@ import {
 } from "react-icons/ai";
 
 interface Iprops {
-	data: [
-		{
-			heading: string;
-			img: string;
-			price: string;
-			del: string;
-			stars: string;
-		},
-	];
+	data: {
+		heading: string;
+		img: StaticImageData;
+		price: string;
+		del: string;
+		stars: string;
+	}[];
 	carousel: boolean;
 }
 

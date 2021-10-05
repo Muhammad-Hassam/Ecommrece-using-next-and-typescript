@@ -3,14 +3,12 @@ import Container from "./Container";
 import Image from "next/image";
 
 interface Iprops {
-	data: [
-		{
-			img: string;
-			product: string;
-			price: string;
-			del: string;
-		},
-	];
+	data: {
+		img: StaticImageData;
+		product: string;
+		price: string;
+		del: string;
+	}[];
 }
 
 const Discountcard = ({ data }: Iprops) => {

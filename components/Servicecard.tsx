@@ -2,13 +2,11 @@ import styles from "../styles/Card.module.scss";
 import Container from "./Container";
 
 interface Iprops {
-	data: [
-		{
-			icon: any;
-			title: string;
-			description: string;
-		},
-	];
+	data: {
+		icon: any;
+		title: string;
+		description: string;
+	}[];
 }
 
 const Servicecard = ({ data }: Iprops) => {
