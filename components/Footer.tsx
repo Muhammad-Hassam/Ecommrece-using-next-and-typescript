@@ -5,13 +5,13 @@ import logo from "../assets/logo (1).svg";
 import playstore from "../assets/googleplay.png";
 import appstore from "../assets/appstore.png";
 import React, { useState } from "react";
-import { SiFacebook } from "react-icons/Si";
+import { SiFacebook } from "react-icons/si";
 import {
 	AiFillTwitterCircle,
 	AiOutlineYoutube,
 	AiFillGoogleCircle,
 	AiOutlineInstagram,
-} from "react-icons/Ai";
+} from "react-icons/ai";
 
 const Footer = () => {
 	const [about, setabout] = useState<string[]>([

@@ -5,9 +5,9 @@ import {
 	AiOutlineSearch,
 	AiOutlineUser,
 	AiOutlineShopping,
-} from "react-icons/Ai";
-import { BsFillGridFill } from "react-icons/Bs";
-import { MdKeyboardArrowRight } from "react-icons/Md";
+} from "react-icons/ai";
+import { BsFillGridFill } from "react-icons/bs";
+import { MdKeyboardArrowRight } from "react-icons/md";
 import Image from "next/image";
 
 const Nav = () => {

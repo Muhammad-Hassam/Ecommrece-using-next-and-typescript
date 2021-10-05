@@ -7,10 +7,10 @@ import Card from "../components/Card";
 import Categorycard from "../components/Categorycard";
 import Ratedcard from "../components/Ratedcard";
 import Arrivalcard from "../components/Arrivals";
-import { IoFlashSharp } from "react-icons/Io5";
-import { BsFillGridFill } from "react-icons/Bs";
-import { GiStarGate, GiJusticeStar, GiPresent } from "react-icons/Gi";
-import { MdFiberNew } from "react-icons/Md";
+import { IoFlashSharp } from "react-icons/io5";
+import { BsFillGridFill } from "react-icons/bs";
+import { GiStarGate, GiJusticeStar, GiPresent } from "react-icons/gi";
+import { MdFiberNew } from "react-icons/md";
 import Servicecard from "../components/Servicecard";
 import {
 	Cardhelper,

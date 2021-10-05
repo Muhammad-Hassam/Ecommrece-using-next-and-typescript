@@ -1,7 +1,7 @@
 import styles from "../styles/Header.module.scss";
 import Container from "./Container";
-import { AiOutlineMail } from "react-icons/Ai";
-import { FiPhone } from "react-icons/Fi";
+import { AiOutlineMail } from "react-icons/ai";
+import { FiPhone } from "react-icons/fi";
 import logo from "../assets/logo.svg";
 import Image from "next/image";
 

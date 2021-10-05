@@ -84,9 +84,9 @@ import mor8 from "../../assets/3 (2).png";
 import mor9 from "../../assets/4 (1).png";
 import mor10 from "../../assets/5 (1).png";
 import mor11 from "../../assets/6 (1).png";
-import { FaShippingFast, FaHeadset } from "react-icons/Fa";
-import { BsCreditCard } from "react-icons/Bs";
-import { SiAdguard } from "react-icons/Si";
+import { FaShippingFast, FaHeadset } from "react-icons/fa";
+import { BsCreditCard } from "react-icons/bs";
+import { SiAdguard } from "react-icons/si";
 
 export const Cardhelper = [
 	{

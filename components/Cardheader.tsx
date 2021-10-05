@@ -1,7 +1,6 @@
 import styles from "../styles/Cardheader.module.scss";
-import Container from "./Container";
 
-import { IoMdArrowDropright } from "react-icons/Io";
+import { IoMdArrowDropright } from "react-icons/io";
 
 interface iprops {
 	heading?: string;

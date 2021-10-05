@@ -1,7 +1,6 @@
 import styles from "../styles/Card.module.scss";
 import Container from "./Container";
 import Image from "next/image";
-import Category from "../assets/category-1.png";
 interface Iprops {
 	datacard: [
 		{

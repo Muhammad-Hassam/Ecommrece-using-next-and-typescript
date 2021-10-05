@@ -6,7 +6,7 @@ import {
 	AiOutlineHeart,
 	AiOutlineStar,
 	AiFillStar,
-} from "react-icons/Ai";
+} from "react-icons/ai";
 
 interface Iprops {
 	data: [

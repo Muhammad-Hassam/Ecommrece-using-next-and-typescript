@@ -1,6 +1,5 @@
 import styles from "../styles/Card.module.scss";
 import Container from "./Container";
-import { FaShippingFast } from "react-icons/Fa";
 
 interface Iprops {
 	data: [

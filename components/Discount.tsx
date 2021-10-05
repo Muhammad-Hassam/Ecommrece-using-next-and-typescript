@@ -1,7 +1,6 @@
 import styles from "../styles/Card.module.scss";
 import Container from "./Container";
 import Image from "next/image";
-import headphone from "../assets/7.png";
 
 interface Iprops {
 	data: [

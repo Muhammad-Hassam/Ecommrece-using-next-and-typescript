@@ -1,8 +1,7 @@
 import styles from "../styles/Card.module.scss";
 import Container from "./Container";
 import Image from "next/image";
-import Camera from "../assets/camera-1.png";
-import { AiOutlineStar, AiFillStar } from "react-icons/Ai";
+import { AiFillStar } from "react-icons/ai";
 
 interface Iprops {
 	data: [

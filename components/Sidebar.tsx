@@ -1,6 +1,4 @@
 import styles from "../styles/Sidebar.module.scss";
-import Container from "./Container";
-import CrslImg from "../assets/ferrari.png";
 import Image from "next/image";
 
 interface Iprops {
