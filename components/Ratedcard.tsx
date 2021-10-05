@@ -19,7 +19,7 @@ const Ratedcard = ({ data }: Iprops) => {
 				<div className={styles.ratedmain}>
 					{data?.map((val, ind) => {
 						return (
-							<div className={styles.rated}>
+							<div className={styles.rated} key={ind}>
 								<div className={styles.imgdiv}>
 									<Image src={val.img} />
 								</div>

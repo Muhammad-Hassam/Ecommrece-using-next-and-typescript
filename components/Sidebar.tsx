@@ -22,7 +22,7 @@ const Sidebar = ({ data, top }: Iprops) => {
 				) : null}
 				{data.map((val, ind) => {
 					return (
-						<div className={styles.insidediv}>
+						<div className={styles.insidediv} key={ind}>
 							<div className={styles.imgdiv}>
 								<Image src={val.img} />
 							</div>

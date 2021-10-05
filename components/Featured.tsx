@@ -16,7 +16,7 @@ const Featurecard = ({ data }: Iprops) => {
 				<div className={styles.feature}>
 					{data?.map((val, ind) => {
 						return (
-							<div className={styles.card}>
+							<div className={styles.card} key={ind}>
 								<div className={styles.imgdiv}>
 									<Image src={val.img} height={460} />
 								</div>

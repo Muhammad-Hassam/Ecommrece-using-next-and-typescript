@@ -16,7 +16,7 @@ const Categorycard = ({ datacard }: Iprops) => {
 				<div className={styles.category}>
 					{datacard?.map((val, ind) => {
 						return (
-							<div className={styles.card}>
+							<div className={styles.card} key={ind}>
 								<div className={styles.cardbtn}>
 									<div className={styles.leftbtn}>
 										<span>{val.itemname}</span>

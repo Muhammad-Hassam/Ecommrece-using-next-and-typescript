@@ -16,7 +16,7 @@ const Servicecard = ({ data }: Iprops) => {
 				<div className={styles.service}>
 					{data.map((val, ind) => {
 						return (
-							<div className={styles.insidediv}>
+							<div className={styles.insidediv} key={ind}>
 								<div>
 									<button>
 										<val.icon size={20} />

@@ -18,7 +18,7 @@ const Discountcard = ({ data }: Iprops) => {
 				<div className={styles.discount}>
 					{data.map((val, ind) => {
 						return (
-							<div className={styles.card}>
+							<div className={styles.card} key={ind}>
 								<div className={styles.imgdiv}>
 									<Image src={val.img} />
 								</div>
