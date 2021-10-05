@@ -37,6 +37,7 @@ import Sidebar from "../components/Sidebar";
 import Banner from "../components/Banner";
 import Smallcard from "../components/Smallcard";
 import Footer from "../components/Footer";
+import Bottomtab from "../components/bottomtab";
 
 const Home: NextPage = () => {
 	return (
@@ -153,6 +154,7 @@ const Home: NextPage = () => {
 					</>
 				</Container>
 				<Servicecard data={Servicehelper} />
+				<Bottomtab />
 				<Footer />
 			</div>
 		</>
